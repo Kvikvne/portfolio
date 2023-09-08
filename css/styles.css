@@ -899,12 +899,12 @@ h4 {
     padding: 15px 0;
   }
   .project-img {
-    height: 15%;
-    margin: auto 0 5% 0;
+    height: auto;
+    width: 100%;
   }
   .project-img-2 {
-    height: 50px;
-    margin: auto 2rem auto 0;
+    height: auto;
+    width: 100%;
   }
   .who {
     width: auto;
@@ -931,20 +931,20 @@ h4 {
     opacity: 0;
   }
   .siren-img {
-    width: auto;
-    margin: auto 25px auto 0;
+    height: auto;
+    width: 100%;
   }
   .ramble-img {
-    width: auto;
-    margin: auto auto;
+    height: auto;
+    width: 100%;
   }
 
   .flex-img {
-    width: auto;
-    margin: auto 25px auto 0;
+    height: auto;
+    width: 100%;
   }
   .ur-img {
-    width: auto;
-    margin: auto 25px auto 0;
+    height: auto;
+    width: 100%;
   }
 }

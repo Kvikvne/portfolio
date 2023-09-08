@@ -22,7 +22,7 @@ body {
   border-radius: 50%;
   background-color: transparent;
   border: none;
-  box-shadow: 0 0 80px 80px #ffffff21;
+  box-shadow: 0 0 150px 150px #ffffff21;
   filter: blur(10px);
   pointer-events: none;
   z-index: 10;
@@ -221,10 +221,10 @@ h4 {
   width: 3.5rem;
 }
 .frontend {
-  border: solid;
+  border: none;
   border-radius: 10px;
   border-width: 2px;
-  border-color: #1d1d1d;
+  background-color: #1d1d1d35;
   width: 100%;
   transform-origin: center;
   transition: background-color 0.3s, transform 0.3s, width 0.3s;
@@ -238,9 +238,9 @@ h4 {
 }
 
 .frontend:hover {
-  background-color: #1d1d1d;
+  background-color: #1d1d1d75;
   transform: translateY(-10px);
-  width: 25rem;
+  width: 90%;
 }
 
 .frontend-body {
@@ -254,27 +254,63 @@ h4 {
   height: auto;
   width: 100%;
   background-color: #000000;
+  max-width: 100%;
 }
 
-.projects-list {
+.projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   margin-top: 0;
 }
-
+@media (max-width: 1450px) {
+  .container {
+    padding-left: 8%;
+    padding-right: 2%;
+    box-sizing: border-box;
+    background-color: #000000;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 5rem;
+  }
+  .projects-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+  .project {
+    width: 100%;
+  }
+  .project-2 {
+    width: 100%;
+  }
+}
 .project {
   display: flex;
-  background-color: #1d1d1d;
+  background-color: #1d1d1d55;
   padding: 1rem;
   border-radius: 5px;
   transition: background-color 0.3s;
   opacity: 0;
-  width: 90%;
+  width: 95%;
+}
+.project-2 {
+  display: flex;
+  background-color: #1d1d1d55;
+  padding: 1rem;
+  margin-top: 0.4rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  opacity: 0;
+  width: 95%;
+  height: fit-content;
 }
 
 .project:hover {
-  background-color: #363636;
+  background-color: #1d1d1d75;
+}
+.project-2:hover {
+  background-color: #1d1d1d75;
 }
 
 .projects-title {
@@ -341,7 +377,7 @@ h4 {
 }
 .xp-1 {
   display: flex;
-  background-color: #1d1d1d;
+  background-color: #1d1d1d55;
   padding: 1rem;
   border-radius: 5px;
   transition: background-color 0.3s;
@@ -349,7 +385,7 @@ h4 {
 }
 .xp-2 {
   display: flex;
-  background-color: #1d1d1d;
+  background-color: #1d1d1d55;
   padding: 1rem;
   margin-top: 0.4rem;
   border-radius: 5px;
@@ -358,10 +394,10 @@ h4 {
 }
 
 .xp-1:hover {
-  background-color: #363636;
+  background-color: #1d1d1d75;
 }
 .xp-2:hover {
-  background-color: #363636;
+  background-color: #1d1d1d75;
 }
 .link-icon {
   cursor: pointer;
@@ -858,7 +894,6 @@ h4 {
   }
   .projects {
     margin: 0;
-
     height: fit-content;
     max-width: 100%;
   }
@@ -871,7 +906,7 @@ h4 {
     transition: background-color 0.3s;
     opacity: 0;
     max-width: 100%;
-    height: fit-content;
+    height: 100%;
   }
   .project-code {
     display: flex;
@@ -880,13 +915,46 @@ h4 {
   .projects-p {
     width: auto;
   }
-  .projects-list {
+  .projects-grid {
     display: flex;
     flex-wrap: wrap;
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 10px;
-    column-gap: 10px;
     margin-top: 0;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    background-color: #1d1d1d;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    opacity: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .project-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #1d1d1d;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    opacity: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .project-img {
+    height: auto;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    
+    
+  }
+  .project-img-2 {
+    height: auto;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
   }
   .project-code p {
     padding: 0.2rem 0.4rem;
@@ -898,16 +966,7 @@ h4 {
   .link-icon {
     padding: 15px 0;
   }
-  .project-img {
-    height: auto;
-    width: 100%;
-    max-height: 100%;
-  }
-  .project-img-2 {
-    height: auto;
-    max-height: 100%;
-    width: 100%;
-  }
+ 
   .who {
     width: auto;
     margin: 0;

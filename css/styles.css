@@ -934,6 +934,7 @@ h4 {
   .project-2 {
     display: flex;
     flex-direction: column;
+    
     background-color: #1d1d1d;
     padding: 1rem;
     border-radius: 5px;

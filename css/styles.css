@@ -58,6 +58,9 @@ h4 {
   color: #fff;
   font-size: 1.8rem;
 }
+a {
+  text-decoration: none;
+}
 
 .grow {
   flex-grow: 1;
@@ -116,9 +119,9 @@ h4 {
   overflow: hidden;
   white-space: nowrap;
   transition: width 0.3s ease;
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
-
+  margin-left: 15px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -147,6 +150,7 @@ h4 {
 
 .links i {
   font-size: 1.5rem;
+  
 }
 
 .line {
@@ -155,7 +159,7 @@ h4 {
   background-color: #424242;
 }
 
-.sidebar ul li a:hover span {
+.sidebar:hover span {
   width: 6.5rem;
 }
 

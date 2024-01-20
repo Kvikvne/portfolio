@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const job = document.querySelector(".job");
     job.classList.add("flip-in-hor-top")
 
-    const btn = document.querySelector(".resume-btn");
+    const btn = document.querySelector(".dwn-btns");
     btn.classList.add("swing-in-top-fwd")
     
     if (window.innerWidth <= 768) {

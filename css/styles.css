@@ -125,10 +125,8 @@ a {
 }
 
 .dwn-btns {
-  
   display: flex;
   gap: 15px;
-
 }
 
 .resume-btn {
@@ -156,7 +154,6 @@ a {
 
 .links i {
   font-size: 1.5rem;
-  
 }
 
 .line {
@@ -315,7 +312,7 @@ a {
   opacity: 0;
   width: 95%;
   height: fit-content;
-  transition: scale ease .5s, background-color ease .7s;
+  transition: scale ease 0.5s, background-color ease 0.7s;
 }
 
 .project:hover {
@@ -471,7 +468,6 @@ a {
 }
 .ur-img {
   width: auto;
-  height: 3.2rem;
   margin: auto 25px auto 0;
 }
 
@@ -752,7 +748,7 @@ a {
   .sidebar {
     width: 3.8rem;
   }
-  .name{
+  .name {
     font-size: 5em;
   }
   .hero-p {
@@ -1027,7 +1023,7 @@ a {
     height: auto;
     width: 100%;
     max-height: 100%;
-    max-width: 100%;  
+    max-width: 100%;
   }
   .project-img-2 {
     height: auto;
@@ -1045,7 +1041,7 @@ a {
   .link-icon {
     padding: 15px 0;
   }
- 
+
   .who {
     width: auto;
     margin: 0;
@@ -1087,4 +1083,8 @@ a {
     height: auto;
     width: 100%;
   }
+}
+
+.xp-2 img {
+  max-width: 200px;
 }

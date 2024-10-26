@@ -204,6 +204,7 @@ a {
   height: auto;
   width: 100%;
   background-color: #000000;
+  margin-bottom: 24px;
 }
 .skill-title {
   text-align: left;
@@ -924,7 +925,7 @@ a {
     color: #fff;
   }
   .name {
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
   .hero-title {
     margin: 0;
@@ -962,7 +963,6 @@ a {
     border: none;
     border-radius: 10px;
     border-width: 2px;
-    width: auto;
     transform-origin: center;
     transition: background-color 0.3s, transform 0.3s, width 0.3s;
     padding-bottom: 0.8rem;

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { CircleChevronDown } from "lucide-react";
+import { CircleChevronDown, icons } from "lucide-react";
 import { EmailButton } from "./emailButton";
 
 const linkButtons = [
@@ -54,13 +54,15 @@ export function Hero() {
             </p>
             <div className="flex gap-4 z-1 mt-10">
                 {linkButtons.map((link, idx) => (
-                    <Button
-                        key={idx}
-                        className="cursor-pointer"
-                        variant="ghost"
-                    >
-                        {link.icon} {link.name}
-                    </Button>
+                    <Link target="_blank" href={link.link}>
+                        <Button
+                            key={idx}
+                            className="cursor-pointer"
+                            variant="ghost"
+                        >
+                            {link.icon} {link.name}
+                        </Button>
+                    </Link>
                 ))}
                 <EmailButton />
             </div>

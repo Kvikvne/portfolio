@@ -25,14 +25,14 @@ export default function RootLayout({
         <>
             <html lang="en" suppressHydrationWarning>
                 <head />
-                <body className="">
+                <body>
                     <ThemeProvider
                         attribute="class"
-                        defaultTheme="system"
+                        defaultTheme="dark"
                         enableSystem
                         disableTransitionOnChange
                     >
-                        <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+                        <div className="container mx-auto px-1 md:px-6 lg:px-12">
                             <ModeToggle />
                             {children}
                             <Toaster />

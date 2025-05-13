@@ -63,7 +63,7 @@ const projectCards = [
 
 export function Projects() {
     return (
-        <section className="py-20 px-6 flex flex-col items-center">
+        <section className="py-5 md:py-20 px-6 flex flex-col items-center">
             <h4 className="text-4xl font-bold mt-12">Projects</h4>
             <p className="max-w-2xl my-6 text-base text-muted-foreground leading-relaxed">
                 Each project highlights my ability to solve real world problems
@@ -86,7 +86,7 @@ export function Projects() {
                                                 <CircleAlert className="text-muted-foreground h-5 w-5" />
                                             </TooltipTrigger>
                                             <TooltipContent>
-                                                <p className="max-w-sm text-xs">
+                                                <p className="max-w-md text-xs">
                                                     {card.misc}
                                                 </p>
                                             </TooltipContent>

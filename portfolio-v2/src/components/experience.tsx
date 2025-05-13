@@ -22,7 +22,7 @@ const experienceCards = [
     },
     {
         title: "Universal Robots",
-        logo: "/ur_logo.png",
+        logo: "/ur_logo.svg",
         jobTitle: "Freelance",
         dateRange: "August 2023",
         bullets: [
@@ -33,7 +33,7 @@ const experienceCards = [
         ],
     },
     {
-        title: "Siren Creative Co. | Hawaii Brand & Web Design",
+        title: "Siren Creative Co.",
         logo: "/siren.svg",
         jobTitle: "Freelance",
         dateRange: "March 2022 - Present",
@@ -48,21 +48,23 @@ const experienceCards = [
 
 export function Experience() {
     return (
-        <section className="py-20 px-6">
-            <h4 className="text-4xl font-bold mt-12">Experience</h4>
-            <p className="max-w-2xl mt-6 text-base text-muted-foreground leading-relaxed">
-                I've worked with a range of companies from logistics operations
-                to creative agencies building responsive, user focused
-                applications that solve real business problems. These
-                experiences have sharpened my skills in full stack development,
-                cross-team collaboration, and product delivery across diverse
-                industries.
-            </p>
+        <section className="py-5 md:py-20 px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-12">
+                <div>
+                    <h4 className="text-4xl font-bold mt-12">Experience</h4>
+                    <p className="max-w-2xl mt-6 text-base text-muted-foreground leading-relaxed">
+                        I've worked with a range of companies from logistics
+                        operations to creative agencies building responsive,
+                        user focused applications that solve real business
+                        problems. These experiences have sharpened my skills in
+                        full stack development, cross-team collaboration, and
+                        product delivery across diverse industries.
+                    </p>
+                </div>
                 {experienceCards.map((card, idx) => (
                     <Card key={idx} className="">
                         <CardHeader>
-                            <div className="flex gap-5 justify-between items-center flex-wrap">
+                            <div className="flex gap-5 justify-between items-center flex-wrap-reverse">
                                 <div>
                                     <CardTitle className="text-lg">
                                         {card.title}
@@ -77,7 +79,7 @@ export function Experience() {
                                 <img
                                     src={card.logo}
                                     alt={card.title}
-                                    className="w-45 h-fit object-contain object-top"
+                                    className="0 w-45 max-h-fit object-contain object-top drop-shadow-sm bg-accent p-4 dark:bg-card rounded-md"
                                 />
                             </div>
                         </CardHeader>

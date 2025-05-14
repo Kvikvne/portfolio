@@ -39,7 +39,7 @@ export function Hero() {
     return (
         <section
             id="home"
-            className="min-h-svh py-15 md:py-20 px-6 flex items-center justify-center flex-col"
+            className="min-h-svh py-15 md:py-20  flex items-center justify-center flex-col"
         >
             <div className="hidden md:visable absolute top-0 left-1/2 -translate-x-1/2 h-[50rem] w-[50rem] rounded-full bg-purple-800 opacity-8 blur-[200px] z-0" />
             <div className=" flex flex-col gap-1 z-1">

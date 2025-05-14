@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import { ModeToggle } from "@/components/theme-toggle";
+import { Metadata } from "next";
 
 const poppins = Poppins({
     variable: "--font-poppins",
@@ -11,7 +11,7 @@ const poppins = Poppins({
     weight: ["300", "400", "500", "600", "700"], // adjust as needed
 });
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Kaikane Anderson - Software Engineer",
     description:
         "Full-stack engineer focused on building scalable, user-centric web apps using React, Next.js, Django, and FastAPI.",
@@ -31,10 +31,13 @@ export const metadata = {
         "JavaScript",
         "TypeScript",
     ],
+    icons: {
+        icon: "/favicon-32x32.png",
+    },
     openGraph: {
         title: "Kaikane Anderson - Software Engineer",
         description:
-            "Explore Kaikane's work building performant, accessible, and modern web apps with clean design and real-world impact.",
+            "Explore Kaikane&apos;s work building performant, accessible, and modern web apps with clean design and real-world impact.",
         url: "https://portfolio.kvikvne.com",
         siteName: "Kaikane Anderson",
         images: [
@@ -51,7 +54,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "Kaikane Anderson - Software Engineer",
         description:
-            "Clean, thoughtful engineering. Explore Kaikane's personal work and commercial SaaS projects.",
+            "Clean, thoughtful engineering. Explore Kaikane&apos;s personal work and commercial SaaS projects.",
         images: ["/OG-preview-image.png"],
     },
 };
@@ -62,25 +65,22 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <>
-            <html lang="en" suppressHydrationWarning>
-                <link rel="icon" href="/favicon-32x32.png" sizes="any" />
-                <head />
-                <body>
-                    <ThemeProvider
-                        attribute="class"
-                        defaultTheme="dark"
-                        enableSystem
-                        disableTransitionOnChange
-                    >
-                        <div className="container mx-auto px-1 md:px-6 lg:px-12">
-                            <ModeToggle />
-                            {children}
-                            <Toaster />
-                        </div>
-                    </ThemeProvider>
-                </body>
-            </html>
-        </>
+        <html lang="en" className={poppins.variable} suppressHydrationWarning>
+            <head />
+            <body>
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="dark"
+                    enableSystem
+                    disableTransitionOnChange
+                >
+                    <div className="container mx-auto px-1 md:px-6 lg:px-12">
+                        <ModeToggle />
+                        {children}
+                        <Toaster />
+                    </div>
+                </ThemeProvider>
+            </body>
+        </html>
     );
 }

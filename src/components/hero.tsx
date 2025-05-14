@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { CircleChevronDown, icons } from "lucide-react";
+import { CircleChevronDown } from "lucide-react";
 import { EmailButton } from "./emailButton";
 
 const linkButtons = [
@@ -51,11 +51,11 @@ export function Hero() {
             <h3 className="text-3xl md:text-5xl font-bold mt-12 z-1">Hello.</h3>
             <p className="max-w-2xl mt-6 text-lg z-1">
                 I build scalable, user focused web applications with modern
-                tools like React, Next.js, Django, and FastAPI. Whether it's
-                creating seamless frontends or developing robust APIs, I focus
-                on performance, accessibility, and clean design. My work blends
-                engineering and UX to solve real world problems like building AI
-                powered analytics for e-commerce.
+                tools like React, Next.js, Django, and FastAPI. Whether
+                it&apos;s creating seamless frontends or developing robust APIs,
+                I focus on performance, accessibility, and clean design. My work
+                blends engineering and UX to solve real world problems like
+                building AI powered analytics for e-commerce.
             </p>
             <div className="flex gap-4 z-1 mt-10">
                 {linkButtons.map((link, idx) => (

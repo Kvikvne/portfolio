@@ -6,6 +6,7 @@ import {
     CardContent,
 } from "@/components/ui/card";
 import { Dot } from "lucide-react";
+import Image from "next/image";
 
 const experienceCards = [
     {
@@ -64,7 +65,7 @@ export function Experience() {
                 {experienceCards.map((card, idx) => (
                     <Card key={idx} className="">
                         <CardHeader>
-                            <div className="flex gap-5 justify-between items-center flex-wrap-reverse">
+                            <div className="flex gap-5 justify-between items-center flex-wrap">
                                 <div>
                                     <CardTitle className="text-lg">
                                         {card.title}
@@ -76,11 +77,15 @@ export function Experience() {
                                         {card.dateRange}
                                     </CardDescription>
                                 </div>
-                                <img
-                                    src={card.logo}
-                                    alt={card.title}
-                                    className="0 w-45 max-h-fit object-contain object-top drop-shadow-sm bg-accent p-4 dark:bg-card rounded-md"
-                                />
+                                <div className="relative m-auto md:m-0">
+                                    <Image
+                                        src={card.logo}
+                                        alt={card.title}
+                                        width={125}
+                                        height={10}
+                                        className="w-60 md:w-40 drop-shadow-sm "
+                                    />
+                                </div>
                             </div>
                         </CardHeader>
                         <CardContent>

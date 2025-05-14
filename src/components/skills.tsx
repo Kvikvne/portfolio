@@ -2,7 +2,6 @@ import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
 } from "./ui/card";
@@ -168,7 +167,7 @@ const skillCards = [
     {
         title: "Databases",
         description:
-            "Systems I've used to model and persist data for web applications.",
+            "Systems I&apos;ve used to model and persist data for web applications.",
         skills: [
             {
                 name: "PostgreSQL",
@@ -367,12 +366,12 @@ export function Skills() {
                 Skills
             </h4>
             <p className="max-w-2xl mt-6 text-base text-muted-foreground leading-relaxed">
-                I'm a versatile developer with a strong, modern skill set across
-                frontend, backend, and infrastructure. Im passionate about
-                building clean, scalable web applications and staying current
-                with the latest tools and best practices. Heres a breakdown of
-                the technologies I use to turn ideas into fast, reliable, and
-                user focused products:
+                I&apos;m a versatile developer with a strong, modern skill set
+                across frontend, backend, and infrastructure. Im passionate
+                about building clean, scalable web applications and staying
+                current with the latest tools and best practices. Heres a
+                breakdown of the technologies I use to turn ideas into fast,
+                reliable, and user focused products:
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
                 {skillCards.map((card, idx) => (

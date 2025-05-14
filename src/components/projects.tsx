@@ -16,6 +16,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { SquareArrowOutUpRight, CircleAlert } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const projectCards = [
     {
@@ -75,7 +76,7 @@ export function Projects() {
             {projectCards.map((card, idx) => (
                 <Card key={idx} className="w-full max-w-4xl mb-3">
                     <CardHeader>
-                        <div className="flex justify-between items-start gap-4">
+                        <div className="flex justify-center md:justify-between items-start gap-4">
                             {/* Left: Title + Optional Tooltip */}
                             <CardTitle className="text-xl flex items-center gap-2">
                                 {card.title}
@@ -115,11 +116,13 @@ export function Projects() {
                     </CardHeader>
 
                     <CardContent className="space-y-4">
-                        <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-                            <img
+                        <div className="flex flex-col sm:flex-row items-center md:items-start  gap-4">
+                            <Image
                                 src={card.thumb}
                                 alt={card.title}
-                                className="w-45 h-fit object-contain object-top rounded-md"
+                                width={175}
+                                height={50}
+                                className="rounded-md w-full md:w-45"
                             />
                             <div className="flex flex-wrap gap-2">
                                 <p className="text-muted-foreground text-sm leading-relaxed">

@@ -15,9 +15,9 @@ const experienceCards = [
         jobTitle: "Frontend Developer",
         dateRange: "March 2024-Present",
         bullets: [
-            "Built internal web applications for yard, truck, and warehouse logistics, streamlining operations and improving efficiency.",
-            "Partnered with UI/UX designers and backend developers to deliver responsive interfaces tailored to logistics teams and external partners.",
-            "Integrated and optimized API communication between frontend and backend systems for faster data exchange.",
+            "Build internal web applications for yard, truck, and warehouse logistics, streamlining operations and improving efficiency.",
+            "Collaborate with UI/UX designers and backend developers to deliver responsive interfaces tailored to logistics teams and external partners.",
+            "Integrate and optimized API communication between frontend and backend systems for faster data exchange.",
             "Led planning sessions with stakeholders to align on evolving business needs—resulting in higher adoption rates and more efficient workflows.",
         ],
     },

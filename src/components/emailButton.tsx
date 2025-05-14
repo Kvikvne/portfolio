@@ -16,7 +16,7 @@ export function EmailButton() {
                 toast("s̷̲̗͒ţ̸̊͜ǫ̸̂̈́p̵̖̌ ̴͉̝͆̋c̷̛̠̏l̷̥̎̎i̸̛͉c̶͚͝k̶̰̎̇ͅi̵̱̞͝ņ̶̌g̵̢̏ ̴̒́͜t̴̪͛̕h̵̺̠̕ė̸̪̤ ̷̩̀̕b̷̢̤͑u̸͍̔͆t̶̲͊t̸̺̟̕o̸͈̊n̸͙͙͠");
             } else {
                 toast("Email copied to clipboard.", {
-                    description: "I hope you&apos;re not a scammer :)",
+                    description: "I hope you're not a scammer :)",
                 });
             }
         } catch (err) {

@@ -12,6 +12,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://portfolio.kvikvne.com"),
     title: "Kaikane Anderson - Software Engineer",
     description:
         "Full-stack engineer focused on building scalable, user-centric web apps using React, Next.js, Django, and FastAPI.",

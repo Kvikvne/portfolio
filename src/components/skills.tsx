@@ -167,7 +167,7 @@ const skillCards = [
     {
         title: "Databases",
         description:
-            "Systems I&apos;ve used to model and persist data for web applications.",
+            "Systems I've used to model and persist data for web applications.",
         skills: [
             {
                 name: "PostgreSQL",

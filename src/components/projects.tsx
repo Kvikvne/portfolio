@@ -34,7 +34,7 @@ const projectCards = [
         description:
             "Integrated Stripe's API for secure payment processing and leveraged Printify's API to efficiently listproducts and manage order fulfillment. The checkout process seamlessly stores user carts in the database, directing them to a secure Stripe page for payment and shipping details. Upon checkout, a webhook triggers a streamlined request to Printify, automating the production and shipment of orders for a seamless end-to-end user experience.",
         thumb: "/ecom-thumb.jpg",
-        link: "https://www.kvikvne.com/",
+        link: "https://github.com/Kvikvne/photo-ecom/tree/refactor",
         badgeItems: [
             "React.js",
             "Express.js",

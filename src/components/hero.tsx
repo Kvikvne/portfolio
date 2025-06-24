@@ -69,7 +69,7 @@ export function Hero() {
             </div>
             <div className="mt-10 flex justify-center gap-4 z-1 w-full ">
                 <a
-                    href="/Kaikane Anderson-2025.pdf"
+                    href="/Kaikane-Anderson-Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

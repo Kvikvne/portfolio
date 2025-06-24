@@ -36,7 +36,7 @@ const projectCards = [
         thumb: "/ecom-thumb.jpg",
         link: "https://github.com/Kvikvne/photo-ecom",
         badgeItems: [
-            "React.js",
+            "Next.js",
             "Express.js",
             "MongoDB",
             "Stripe",

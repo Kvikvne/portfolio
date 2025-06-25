@@ -58,7 +58,9 @@ const projectCards = [
 export function Projects() {
     return (
         <section className="py-5 md:py-20 px-6 flex flex-col items-center">
-            <h4 className="text-4xl font-bold mt-12">Projects</h4>
+            <h4 id="projects" className="text-4xl font-bold mt-12">
+                Projects
+            </h4>
             <p className="max-w-2xl my-6 text-base text-muted-foreground leading-relaxed">
                 Each project highlights my ability to solve real world problems
                 through thoughtful design, clean code, and modern development

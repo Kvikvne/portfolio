@@ -15,10 +15,10 @@ const experienceCards = [
         jobTitle: "Frontend Developer",
         dateRange: "March 2024-Present",
         bullets: [
-            "Build internal web applications for yard, truck, and warehouse logistics, streamlining operations and improving efficiency.",
-            "Collaborate with UI/UX designers and backend developers to deliver responsive interfaces tailored to logistics teams and external partners.",
-            "Integrate and optimized API communication between frontend and backend systems for faster data exchange.",
-            "Led planning sessions with stakeholders to align on evolving business needs—resulting in higher adoption rates and more efficient workflows.",
+            "Develop internal and client-facing tools for warehouse, yard, and truck logistics using React.js, Django REST Framework, and PostgreSQL.",
+            "Improved API efficiency and reduced frontend data load times by optimizing state management and caching using React Query.",
+            "Implemented reusable component libraries and Tailwind CSS utility classes to accelerate development and ensure visual consistency.",
+            "Work closely with logistics managers to gather requirements, iterate on features, and deploy updates using CI/CD pipelines.",
         ],
     },
     {
@@ -27,8 +27,8 @@ const experienceCards = [
         jobTitle: "Freelance",
         dateRange: "August 2023",
         bullets: [
-            "Developed a lightweight desktop tool to capture and store telemetry from Universal Robots hardware via TCP sockets using Python and Tkinter.",
-            "Ran socket server in a background thread to maintain UI responsiveness and allow real-time TCP data capture",
+            "Built a Python app for Universal Robots automating live robotic data exports to Excel, reducing human error and improving traceability.",
+            "Ran socket server in a background thread to maintain UI responsiveness and allow real-time TCP data capture.",
             "Built a simple UI for non-technical operators, improving usability and reducing friction in testing environments.",
             "Helped robotics engineers automate log collection—accelerating debugging and improving the quality of hardware diagnostics.",
         ],

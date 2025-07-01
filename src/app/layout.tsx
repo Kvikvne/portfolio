@@ -4,6 +4,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import { ModeToggle } from "@/components/theme-toggle";
 import { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 
 const poppins = Poppins({
     variable: "--font-poppins",
@@ -79,6 +80,7 @@ export default function RootLayout({
                         <ModeToggle />
                         {children}
                         <Toaster />
+                        <Analytics />
                     </div>
                 </ThemeProvider>
             </body>
